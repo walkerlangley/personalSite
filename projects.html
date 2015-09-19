@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Walker Langley | SEO, Photographer and Realtor</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,300italic,400italic,700italic,700,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-67837671-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+<!--		<script src="https://maps.googleapis.com/maps/api/js"></script> -->
+	</head>
+	<body>
+		<header>
+			<a href="index.html" id="logo">
+				<h1>Walker Langley</h1>
+			</a>
+			<nav id="menu">
+                <ul>
+                    <li><a href="index.html">Photography</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="projects.html" class = 'selected'>Projects</a></li>
+                </ul>
+			</nav>
+		</header>
+ 		<div id="wrapper">
+			<section> 
+                <h1>Javascript projects</h1>
+                <div class ='js-projects'>
+                    <ul>
+                        <div class = 'btn'>
+                        <li>Button Click -- <button type = "button" id='button' class='color-change' onclick="setColor()">Click Me</button><button type = 'button' id='button-clear' class = 'color-clear' onclick='clearColor()'>Clear Button Background Color</button></li>
+                        </div>
+                        <div class = 'google_map'>
+                        <li>Google Maps API - Places I've Lived</li>
+                        <div id='map'></div>
+                        <li>Vlookup function</li>
+                        <form>
+                            Calls Taken:<br>
+                            <input type='number' id='calls' class='numer-box' value='0'><br>
+                            Calls to Credit<br>
+                            <input type='number' id='calls-to-credit' class='number-box' value='0'><br><br>
+                            <button type = 'button' id='creditButton' onclick='callsToCredit()'>Calculate % Calls into Credit</button>
+                            <input type ='text' id = 'credit'><br><br>
+                            <button type = 'button' id='compButton' onclick='callsToCredit(); compCalc()'>Calculate Comp</button>
+                            <input type ='text' id = 'comp'><br><br>
+                            <table id='compGrid'>
+                                <tr>
+                                    <th id='headder'>Calls into Credit</th>
+                                    <th id='headder'>Payout</th>
+                                </tr>
+                                <tr>
+                                    <td>70%</td>
+                                    <td>$4.00</td>
+                                </tr>
+                                <tr>
+                                    <td>75%</td>
+                                    <td>$4.50</td>
+                                </tr>
+                                <tr>
+                                    <td>80%</td>
+                                    <td>$5.00</td>
+                                </tr>
+                                <tr>
+                                    <td>85%</td>
+                                    <td>$5.50</td>
+                                </tr>
+                            </table>
+                        </form>
+                        </div>
+                    </ul>
+                </div>
+                <p>If you'd like to follow me on Twitter, my username is <a href = 'https://twitter.com/walkerlangley' target = '_blank'>@walkerlangley</a></p>
+			</section> 
+			<footer>
+                
+<!-- This code below is copied from https://instagram.com/accounts/badges/ and is supposed to result in an instagram badge-->  
+              <style>.ig-b- { display: inline-block; }
+                                .ig-b- img { visibility: hidden; }
+                                .ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
+                                .ig-b-48 { width: 48px; height: 48px; background: url(//badges.instagram.com/static/images/ig-badge-sprite-48.png) no-repeat 0 0; }
+                                @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+                                .ig-b-48 { background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-48@2x.png); background-size: 60px 178px; } }</style>
+				<a href="http://instagram.com/walker_langley?ref=badge" target="_blank"><img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/64/Instagram-icon.png" alt="Instagram" class="social-icon"></a>
+				<a href="https://www.facebook.com/walker.langley.5" target="_blank"><img src="img/facebook.png" alt="facebook" class="social-icon"></a>
+				<p>&copy; 2015 Walker Langley</p>
+			</footer>
+		</div>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/lightbox.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/js_projects.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/compGrid.js" type="text/javascript" charset="utf-8"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaG625esyjSFXHgUcBnqzsMd6BPNpvppw&callback=initMap">
+    </script>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+<head>
+
+<script>
+    var count=1;
+function setColor(btn, color){
+    
+    var property = document.getElementById(btn);
+    if (count == 0){
+        property.style.backgroundColor = "#FFFFFF"
+        count=1;        
+    }
+    else{
+        property.style.backgroundColor = "#7FFF00"
+        count=0;
+    }
+
+}
+</script>
+</head>
+
+<body>
+
+<input type="button" id="button" value = "button" style= "color:white" onclick="setColor('button', '#101010')";/>
+
+</body>
+</html>

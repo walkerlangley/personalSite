@@ -1,0 +1,258 @@
+/****************************
+GENERAL
+*****************************/
+body {
+	font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+#wrapper {
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/****************************
+HEADING
+*****************************/
+
+header {
+	float: left;
+	margin: 0 0 30px 8;
+	padding: 5px 0 0 0;
+	width: 100%;
+}
+
+#logo {
+	text-align: center;
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Changa One', sans-serif;
+	margin: 15px 0;
+	font-size: 1.75em;
+	font-weight: normal;
+	line-height: 0.8em;
+}
+
+h2 {
+	font-size: 0.75em;
+	margin: -5px 0 0;
+	font-weight: normal;
+}
+
+
+/****************************
+NAVIGATION
+*****************************/
+
+nav {
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px 0 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	font-weight: 800;
+	padding: 15px 10px;
+}
+
+
+
+/****************************
+FOOTER
+*****************************/
+
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	clear: both;
+	padding-top:  50px;
+	color: #CCC;
+}
+
+.social-icon {
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+}
+
+
+
+/****************************
+PAGE: PORTFOLIO;
+*****************************/
+#gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#gallery li {
+	float: left;
+	width: 45%;
+	margin: 2.5%;
+	background-color: #f5f5f5;
+	color: #bdc3c7;
+
+
+}
+
+#gallery li a p {
+	margin: 0;
+	padding: 5%;
+	font-size: 0.75em;
+	color: #202124;
+    text-align: center;
+    ;
+
+}
+
+
+/****************************
+PAGE: ABOUT;
+*****************************/
+
+.profile-photo {
+    display: block;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    border-radius: 100%;
+}
+
+
+/****************************
+PAGE: PROJECTS;
+*****************************/
+
+/* CSS to change the format of the button */
+.color-change, .color-clear {
+    border-radius: 5px
+        
+}
+
+.color-change:hover {
+    cursor: pointer
+}
+
+
+/* CSS to show the Google map */
+
+#map {
+    margin: 0;
+    width: 75%;
+    height: 250px;
+    background-color: #CCC;
+}
+
+.js-projects {
+    align-content: center;
+}
+
+.btn {
+    float: inherit;
+    text-align: left;
+}
+
+#button {
+    text-align: center;
+}
+
+#compGrid, #headder, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#headder {
+    padding: 5px;
+    text-align: left;
+}
+
+
+
+/****************************
+COLORS
+*****************************/
+
+/*  site body  */
+body {
+	background-color: #FFF;
+	color: #232324;
+}
+
+/*  blue header */
+header {
+	background-color: #3A5E86;
+	border-color: #A5A8AB;
+}
+
+/*  nav background on mobile devices  */
+nav {
+	background-color: #A5A8AB;
+}
+
+/*  logo text  */
+h1, h2 {
+	color: #fff;
+}
+
+/*  links  */
+a {
+	color: #6ab47b;
+}
+
+/*  nav links  */
+nav a, nav a:visited {
+	color: #fff;
+}
+
+/*  selected nav link  */
+nav a.selected, nav a:hover{
+	color: #4B4C4D;
+}
+
+
+/****************************
+OVERLAY LIGHTBOX
+*****************************/
+
+
+#overlay {
+ background: rgba(0,0,0,0.9);
+ width: 100%;
+ height: 100%;
+ position: absolute;  /*Setting position to absolute results in the overlay only appearing on the visible screen.  Why?  Also, instead of using "position: fixed", I added "position:relative" to the body element at the top of the page http://stackoverflow.com/questions/1003613/how-to-make-a-div-100-of-page-not-screen-height*/
+ text-align: center;
+ top: 0;
+ left: 0;
+ display: none;
+}
+
+#overlay img {
+    margin-top: 10%;  s
+}
+
+#overlay p {
+    color: #FFF;
+}
+
